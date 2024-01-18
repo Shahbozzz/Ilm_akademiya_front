@@ -56,25 +56,60 @@ img {
     background-color: #f5f7f8;
     backdrop-filter: blur(5px);   
 }
-header i {
-    visibility: hidden;
+.checkbtn {
+    font-size: 30px;
+    color:#3f9cfb;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
-
+#check{
+    display: none;
+}
 /*Media screen*/
-@media only screen and (max-width:856px){
+@media only screen and (max-width:870px){
+    header {
+        display: block;
+        align-items: center;
+    }
+    .main-menu a{
+        display: block;
+        padding-top: 20px;
+    }
     .main-menu {
         display: none;
+        text-align: center;
+        padding-top: 30px;
+        transition: all 8s;
     }
-    header i {
-        visibility: visible;
-        padding-right: 30px;
-        font-size: 20px;
+    .main-menu button{
+        background-color: #3f9cfb;
+        color: white;
+        padding: 10px 50px;
+        margin-top: 10px;
+        border: none;
+        margin-bottom: 30px;
     }
-    header i:hover {
-        color:#3f9cfb
+    .main-menu button:hover {
+        background: #74baff;
+        border: none;
     }
     header img {
-        width: 120px;
+        width: 130px;
+        margin-top: 20px;
         margin-left: 15px;
+        
     }
+    .checkbtn{
+        display: block;
+        transition: .5s;
+
+    }
+    #check:checked ~ .main-menu{
+        left: 0;
+        display: block;
+        transition: .5s;
+    }   
 }
