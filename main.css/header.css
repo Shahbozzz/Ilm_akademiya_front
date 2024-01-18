@@ -6,7 +6,13 @@
 body {
     height: 10000px;
 }
+.title {
+    position: absolute;
+    margin-top: 200px;
+    z-index: 1;
+}
 header {
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,8 +31,50 @@ img {
     margin-right: 50px;
 }
 .main-menu a {
-    margin: 5px 20px;
-    color: blue;
+    margin: 5px 35px;
+    color: rgb(0, 0, 0);
     font-family: sans-serif;
-    fon
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .2s;
+    cursor: pointer;
+}
+.main-menu a:hover{
+    color:#3f9cfb;
+}
+.main-menu button {
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 2px solid #3f9cfb;
+    color: #3f9cfb;
+    cursor: pointer;
+}
+.main-menu button:hover{
+    background-color: #f5f7f8;
+    backdrop-filter: blur(5px);   
+}
+header i {
+    visibility: hidden;
+}
+
+/*Media screen*/
+@media only screen and (max-width:856px){
+    .main-menu {
+        display: none;
+    }
+    header i {
+        visibility: visible;
+        padding-right: 30px;
+        font-size: 20px;
+    }
+    header i:hover {
+        color:#3f9cfb
+    }
+    header img {
+        width: 120px;
+        margin-left: 15px;
+    }
 }
