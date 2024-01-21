@@ -60,21 +60,21 @@ main{
     margin-top: 100px;
     font-size: 20px;
 }
-.services .services_info{
+.services_info{
     text-align: center;
 }
 .services_boxes{
     display: flex;
     justify-content: space-between;
 }
-.services .services_info h1{
+.services_info h1{
     padding: 20px 10px;
     font-size: 3rem;
     font-family: Poppins;
     color: rgb(8, 8, 37);
     text-shadow: 5px 5px 90px rgba(68, 68, 209, 0.842);
 }
-.services .services_info h3{
+.services_info h3{
     letter-spacing: 2px;
     color: blue;
 }
@@ -108,7 +108,7 @@ main{
     font-family: Poppins;
     padding: 15px 10px;
 }
-.service_box .main-button{
+.main-button{
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
@@ -125,6 +125,110 @@ main{
 .service_box:hover{
 
     box-shadow: inset 0px 0px 25px 2px rgba(0, 122, 255, 0.5);   
+}
+
+/*Video secction*/
+.video_section{
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    background-color: #b1d8ff;
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.video_section h1{
+    font-family: Poppins;
+    color: rgb(0, 0, 70);
+    font-size: 4em;
+}
+.video_section p{
+    color: #10122c;
+    font-size: 18px;
+    font-family: Poppins;
+}
+video{
+    z-index: 1;
+    width: 500px;
+    border-radius: 20px;
+}
+.video_video{
+    position: relative;
+}
+
+/*Carousel style*/
+.carousel_container{
+    margin-top: 100px;
+    padding: 30px 20px;
+}
+
+.course_boxes{
+    display: flex;
+    margin-top: 50px;
+}
+.swiper-slide {
+    width: 400px;
+    box-shadow: inset 0px 0px 100px 1px rgb(176, 176, 255);
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:10px;
+    padding: 20px;
+}
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carousel_button{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 12px 50px;
+    border-radius: 20px;    
+}
+.carousel_button:hover{
+    background-color: #62b1ff;
+}
+.swiper-slide i {
+    font-size: 130px;
+    color: rgb(0, 0, 114);
+    margin-bottom: 20px;
+}
+.swiper-slide .carousel_title{
+    color: #06335f;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.swiper-slide .carousel_subtitle{
+    color: #327cc7;
+    font-size: 20px;
+    font-family: Poppins;
+    margin-bottom: 20px;
+}
+.swiper-slide .carousel_mentor{
+    text-align: left;
+    color: #06335f;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.swiper-slide .carousel_price{
+    text-align: left;
+    font-size: 1.2em;
+    font-family: Poppins;
+    margin-bottom: 10px;
+    color: rgb(59, 59, 59);
+}
+/*Carousel style*/
+/*Footer style*/
+.footer{
+    background-color: #06335f;
+}
+.i{
+    margin-top: 100px;
+    background-color: #000000;
 }
 
 @media only screen and (max-width:1277px){
@@ -148,6 +252,10 @@ main{
     .main_banner{
         display: none;
     }
+    .video_section{
+        display: block;
+        text-align: center;
+    }
 }
 @media only screen and (max-width:850px){
     .services_boxes{
@@ -164,5 +272,75 @@ main{
     }
     .service_box:hover{
         width: 91%;
+    }
+    .course_boxes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #10122c;
+    padding: 40px 0;
+    
+  }
+.footer-informs{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_info>h1,h4,p{
+    margin-bottom: 10px;
+    color: white;
+    user-select: all;
+}
+.footer_info h4{
+    font-size: 1.5em;
+}
+.footer_info p i{
+    margin-right: 5px;
+}
+.footer_info img{
+    width: 100px;
+    position: relative;
+    left: -50px;
+    margin-bottom: 20px;
+}
+.footer_menus a{
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.footer_menus a:hover{
+    text-decoration: underline;
+}
+.footer h5{
+    text-align: center;
+    margin-top: 20px;
+    color: #5e5e5e;
+    font-size: 15px;
+}
+@media only screen and (max-width:600px){
+    .footer-informs{
+        display: block;
+        text-align: center;
+    }
+    .footer_info img{
+        left: -20px;
+        margin-top: 10px;
+    }
+    .video_info h1{
+        font-size: 50px;
+    }
+    video{
+        width: 400px;
     }
 }

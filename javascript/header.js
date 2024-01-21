@@ -19,5 +19,10 @@ window.addEventListener('DOMContentLoaded', () => {
             loader.style.display = 'none';
       },500)
     }, 1000); 
-  });
+    const video = document.querySelector('video');
+
+    video.loop = true;
+
+  }
+  );
   

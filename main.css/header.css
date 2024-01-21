@@ -71,6 +71,8 @@ img {
 #check{
     display: none;
 }
+
+/*Carousel section*/
 /*Media screen*/
 @media only screen and (max-width:870px){
     header {

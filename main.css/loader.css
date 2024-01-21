@@ -31,6 +31,7 @@
   border-top-color:transparent;
   animation: rotate 1.5s linear infinite;             
 }
+
 @keyframes  rotate{
   0% {
       transform: rotate(0deg);
